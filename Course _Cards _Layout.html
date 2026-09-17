@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Course Cards Layout
+        </title>
+        <style>
+            .frame{
+                display: flex;
+                justify-content: center;
+                margin-top: 10em;
+                gap: 50px;
+                text-align: center;
+                flex-wrap: wrap;
+            }
+            .Course{
+                border: 1px solid black;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 8px rgba(15, 10, 157, 0.5);
+            }
+            h3{
+                color: #fd4951;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            button:hover{
+                cursor: pointer;
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="Course">
+                <img src="document/python.png" alt="python_image">
+                <h2>Python Course</h2>
+                <h3>$199</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Course">
+                <img src="document/java.jpg" alt="Java_image">
+                <h2>Java Course</h2>
+                <h3>$299</h3>
+                <button>Add to Cart</button>
+            </div>
+            <div class="Course">
+                <img src="document/javascript.webp" alt="JavaScript_image">
+                <h2>JavaScript Course</h2>
+                <h3>$99</h3>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </body>
+</html>
