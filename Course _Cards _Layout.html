@@ -7,24 +7,28 @@
         <style>
             .frame{
                 display: grid;
-                justify-content: center;
-                gap: 30px;
+                justify-content: space-evenly;
+                gap: 4em;
                 text-align: center;
-                grid-template-columns: repeat(3, 300px);               
+                grid-template-columns: repeat(3, 300px);
+                box-sizing: border-box;               
             }
             .Course{
-                border: 1px solid black;
+                position: relative;
+                margin-right: 10px;
+                width: 320px;
+                border: 1px solid transparent;
                 padding: 10px;
                 border-radius: 10px;
-                margin-top: 20px;
                 box-shadow: 2px 2px 8px rgba(15, 10, 157, 0.5);
             }
             h3{
                 color: #fd4951;
             }
             img{
-                width: 200px;
-                height: 200px;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
             }
             button:hover{
                 cursor: pointer;
@@ -33,14 +37,20 @@
             }
             .Course:hover{
                 border: 3px solid blueviolet;
-                padding: 30px;
+                padding: 15px;
             }
             h1{
                 text-align: center;
-                margin-bottom: 20px;
+                margin-bottom: 40px;
                 text-decoration: underline;
                 font-family: Verdana;
             }
+            .badge {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                
+            } 
             
                 /* Tablet */
             @media (max-width: 1000px) {
@@ -56,12 +66,10 @@
                     width: 80%;
                     margin: auto;
                 }
-
                 .Course {
                     width: 100%;
                     box-sizing: border-box;
                 }
-
                 img {
                     max-width: 100%;
                     height: auto;
@@ -74,12 +82,20 @@
         <h1>Course Section </h1>
         <div class="frame">
             <div class="Course">
+                <div class="badge">
+                    <b>⭐⭐⭐</b>
+                    <p>New Course</p>
+                </div>
                 <img src="document/python.png" alt="Python_image">
                 <h2>Python Course</h2>
                 <h3>$199</h3>
                 <button>Add to Cart</button>
             </div>
             <div class="Course">
+                <div class="badge">
+                    <b>⭐⭐</b>
+                    <p>New Course</p>
+                </div>
                 <img src="document/java.jpg" alt="Java_image">
                 <h2>Java Course</h2>
                 <h3>$299</h3>
@@ -98,12 +114,20 @@
                 <button>Add to Cart</button>
             </div>
             <div class="Course">
+                <div class="badge">
+                    <b>⭐⭐⭐</b>
+                    <p>New Course</p>
+                </div>
                 <img src="document/digital.webp" alt="Digital Marketing_image">
                 <h2>Digital Marketing Course</h2>
                 <h3>$159</h3>
                 <button>Add to Cart</button>
             </div>
             <div class="Course">
+                <div class="badge">
+                    <b>⭐⭐⭐</b>
+                    <p>New Course</p>
+                </div>
                 <img src="document/web.jpg" alt="Web_image">
                 <h2>Web Development Course</h2>
                 <h3>$249</h3>
