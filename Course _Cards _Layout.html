@@ -7,16 +7,16 @@
         <style>
             .frame{
                 display: grid;
-                justify-content: space-evenly;
+                justify-content: center;
+                margin: 50px;
                 gap: 4em;
                 text-align: center;
-                grid-template-columns: repeat(3, 300px);
+                grid-template-columns: repeat(3, 1fr);
                 box-sizing: border-box;               
             }
             .Course{
                 position: relative;
-                margin-right: 10px;
-                width: 320px;
+                width: 90%;
                 border: 1px solid transparent;
                 padding: 10px;
                 border-radius: 10px;
@@ -29,6 +29,10 @@
                 width: 250px;
                 height: 250px;
                 object-fit: cover;
+            }
+            h2,
+            h3 {
+                transition: transform 0.3s ease;
             }
             h2:hover{
                 transform: scale(1.2);
@@ -54,15 +58,28 @@
             .badge {
                 position: absolute;
                 top: 10px;
-                left: 10px;
-                
+                left: 10px;   
             } 
             
                 /* Tablet */
             @media (max-width: 1000px) {
                 .frame {
                     grid-template-columns: repeat(2, 300px);
+                    width: 90%;
+                    margin: auto;
                 }
+                .Course {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                img {
+                    max-width: 80%;
+                    height: auto;
+                }
+                .badge{
+                    max-width: 10%;
+                }
+            
             }
 
                 /* Mobile */
