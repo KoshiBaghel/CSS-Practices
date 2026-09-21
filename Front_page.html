@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>
+            Section Card
+        </title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                background-color:  aliceblue;
+                box-sizing: border-box;
+            } 
+            a{
+                text-decoration: none;
+                font-size: 30px;
+                padding-right: 30px;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid black;
+            }
+            .content-part{
+                min-height: 80vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                gap: 50px;
+                padding: 50px;
+            }
+            .text{
+                text-align: left;
+                width: 50%;
+            }
+            h1{
+                font-size: 50px;
+            }
+            p{
+                padding-top: 20px;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+            button{
+                margin: 30px 0;
+                padding: 12px 25px;
+                border: none;
+                border-radius: 6px;
+                background-color: #2563eb;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .image-part{
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header> 
+            <nav class="navbar">
+                <div class="logo">
+                <img src="https://i.pinimg.com/736x/1b/7b/e2/1b7be209fee3fd17943a981b5508384e.jpg" alt="My course logo" width="100px"></div>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Courses</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <section>
+            <div class="content-part">
+                <div class="text">
+                    <h1>Learn Web Development</h1>
+                    <p>Build modern, responsive, and user-friendly websites with clean design and powerful web technologies. Learn the fundamentals of HTML and CSS while creating real-world projects that improve your skills and confidence as a frontend developer.</p>
+                    <button>
+                        Start Learing
+                    </button>
+                </div>
+                <div class="image-part">
+                    <img src="/document/main_image.avif" alt="My course image">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
