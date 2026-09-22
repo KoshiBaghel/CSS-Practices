@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student_Introduction_Page
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .navbar{
+                padding: 1em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 2px solid black;
+                font-size: 40px;
+                color: goldenrod;
+            }
+            a{
+                text-decoration: none;
+                color: goldenrod;
+            }
+            .main_part{
+                border: 2px solid black;
+                text-align: center;
+            }
+            h1{
+                padding: 0.8em;
+                font-size: 45px;
+                color: rgb(166, 142, 8);
+                text-align: center;
+            }
+            h2{
+                padding: 1em 8em;
+                text-align: left;
+                font-size: 30px;
+            }
+            h3{
+                padding: 0.5em 8em;
+                font-size: 30px;
+                text-align: left;    
+            }
+            .btn{
+                font-size: 20px;
+                padding: 20px;
+                margin: 30px;
+                border-radius: 10px;
+                color: black;
+                background-color: rgb(222, 189, 146);
+            }
+            .btn:hover{
+                background-color: rgb(225, 169, 95);
+                color: black;
+            }
+            b{
+                color: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar">
+                <span>
+                    Kiran
+                </span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="main_part">
+            <h1>MY INTRODUCTION</h1>
+            <h2>Hello I am Kiran 👋 </h2>
+            <h3><b>Course</b>: Computer Science and Engineering</h3>
+            <h3><b>College</b>: Government Girls Polytechic Moradabad</h3>
+            <h3><b>Goal</b>: Frontend Developer</h3>
+            <h3><b>Learning</b>: HTML • CSS • JavaScript</h3>
+
+            <button class="btn" onclick="msg()">Show Message</button>
+        </div>
+        <script type="text/JavaScript">
+            function msg() {
+                alert("🎉 Welcome to my Frontend Developer Journey!");
+            }
+        </script>
+    </body>
+</html>
