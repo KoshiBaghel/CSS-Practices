@@ -51,8 +51,48 @@
                 font-size: 16px;
                 cursor: pointer;
             }
+            button:hover{
+                background-color: blue;
+                box-shadow: 2px 2px 8px rgba(0, 4, 12, 0.5);
+            }
             .image-part{
                 max-width: 100%;
+            }
+            .image-part:hover{
+                transform: scale(1.1);
+            }
+            @media (max-width:600px) {
+                .navbar {
+                    gap: 10px;
+                    padding: 5px;
+                }
+                .logo {
+                    width: 50%;
+                    text-align: left;
+                }
+                .navbar a {
+                    font-size: 18px;
+                    padding-right: 10px;
+                    font-size: 25px;
+                }
+                .content-part{
+                    padding: 30px 20px;
+                    gap: 30px;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .text{
+                    width: 100%;
+                    text-align: center;
+                }
+                .image-part{
+                    width: 100%;
+                    text-align: center;
+                }
+                .image-part img{
+                    width: 90%;
+                    max-width: 400px;
+                }
             }
         </style>
     </head>
@@ -63,7 +103,7 @@
                 <img src="https://i.pinimg.com/736x/1b/7b/e2/1b7be209fee3fd17943a981b5508384e.jpg" alt="My course logo" width="100px"></div>
                 <a href="#">Home</a>
                 <a href="#">About</a>
-                <a href="#">Courses</a>
+                <a href="Course _Cards _Layout.html">Courses</a>
                 <a href="#">Contact</a>
             </nav>
         </header>
@@ -73,7 +113,7 @@
                     <h1>Learn Web Development</h1>
                     <p>Build modern, responsive, and user-friendly websites with clean design and powerful web technologies. Learn the fundamentals of HTML and CSS while creating real-world projects that improve your skills and confidence as a frontend developer.</p>
                     <button>
-                        Start Learing
+                        Start Learning
                     </button>
                 </div>
                 <div class="image-part">
