@@ -73,6 +73,54 @@
             p{
                 margin: 50px;
                 font-size: 20px;
+            }
+            @media screen and (max-width:900px) {
+                .navbar{
+                    font-size:25px;
+                }
+                .skills,
+                .projects{                
+                    gap: 30px;
+                    font-size: 25px;
+                    grid-template-columns: repeat(2 ,1fr); 
+                }
+                h1{
+                    font-size: 40px;
+                }
+                h2{
+                    padding: 1px 100px;
+                    font-size: 30px;
+                }
+                h3{
+                    padding: 1px 60px;
+                    font-size: 25px; 
+                    margin: 20px; 
+                }
+            }
+            @media screen and (max-width:500px) {
+                .navbar{
+                    font-size: 20px;
+                }
+                .skills,
+                .projects{                
+                    gap: 30px;
+                    font-size: 20px;
+                    grid-template-columns: 1fr; 
+                }
+                h1{
+                    font-size: 40px;
+                    padding: 50px;
+                }
+                h2{
+                    padding: 1px 50px;
+                    font-size: 25px;
+                    text-align: left;
+                }
+                h3{
+                    padding: 3px;
+                    font-size: 20px; 
+                    margin: 20px; 
+                }
             }           
         </style>
     </head>
