@@ -40,3 +40,82 @@ a:hover{
     color: black;
     border-bottom: 2px solid sandybrown;
 }
+.menu_order{
+    background-color:white; 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin: 10px;        
+ }
+.cards{
+    position: relative;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px gray;    
+}
+img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;  
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+    margin: 12px;
+}
+h2,
+h3 {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+.Popular{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.New{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 15px; 
+    border-radius: 10px;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(236, 181, 133);
+    color: rgb(255, 98, 0);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px;
+    font-weight: bold;
+}
+.cards:hover{
+    border: 3px solid brown;
+    transform: translateY(-15px);
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    font-family: Verdana;
+}
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;   
+}
+.content{
+    position: absolute;
+    left: 11em;
+    top: 2em;
+    padding: 10px;
+} 
