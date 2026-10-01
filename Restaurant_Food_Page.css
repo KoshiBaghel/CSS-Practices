@@ -26,7 +26,7 @@ a{
 .links{
     padding-right: 2em;
     width: 45%;
-    margin-left: 8em;
+    margin-left: 4em;
     display: flex;
     justify-content: space-between;
 }
@@ -120,7 +120,7 @@ h3 {
     cursor: pointer;
     background-color: red;
     color: white;
-    padding: 10px;
+    padding: 8px;
     font-size: 15px;
     border: 2px solid orange;
     border-radius: 10px;
@@ -130,7 +130,7 @@ h3 {
     cursor: pointer;
     background-color: green;
     color: white;
-    padding: 10px;
+    padding: 8px;
     font-size: 15px;
     border: 2px solid rgb(30, 248, 11); 
     border-radius: 10px;
@@ -165,5 +165,116 @@ h1{
     top: 0;
     right: 0;   
 }
+@media screen and (max-width:900px) {
+    .navbar{
+        font-size: 20px;
+    }
+    .logo{
+        padding-left: 1.5em;
+    }
+    .logo-text{
+        font-size: 1.5em;
+    }
+    .background{
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+    } 
+    .content-box{
+        margin: 2em 10em;   
+    }
+    .menu_order{                
+        grid-template-columns: repeat(2 ,1fr); 
+    }
+    img{
+        height: 100%;
+        width: 50%;
+        margin-right: 20px;
+    }
+    .background{
+        height: 90vh;
+        background-size: cover;
+        background-position: 60% center;
+    }
+    p{
+        font-size: 15px;
+        margin: 10px;
+    }
+    h2,
+    h3 {
+        margin-left: 5px;
+    }
+    .content{
+        margin-top: 30px;
+    }
+    .Popular{
+        margin: 5px;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .New{
+        margin: 5px;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .Order{
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:600px) {  
+    .navbar{
+        font-size: 20px;
+    }
+    .logo{
+        padding-left: 1em;
+    }
+    .logo-text{
+        font-size: 1em;
+    }
+    .links{
+        width: auto;
+        gap: 15px;
+    } 
+    .content-box{
+        margin: 3em 2em;   
+    }
+    .menu_order{                
+        grid-template-columns: 1fr; 
+    }
+    img{
+        height: 200px;
+        width: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 15px;
+        margin: 10px;
+    }
+    h2,
+    h3 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+    .content{
+        margin-top: 30px;
+    }
+    .Popular{
+        margin: 5px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    .New{
+        margin: 5px;
+        padding: 7px;
+        font-size: 15px;
+    }
+    .Order{
+        padding: 10px;
+        margin-top: 10px;
+    }
+}  
 
+                      
 
