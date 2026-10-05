@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .header{
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     border: 2px solid black;
     display: flex;
     justify-content: space-between;
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     gap: 1.5em;
-    padding-right: 2em;
+    padding-right: 1em;
 }
 .right-item{
     background-color: rgb(208, 227, 236);
@@ -30,6 +30,7 @@
     border-radius: 10px;
     margin: 10px;
     color: gray;
+    width: 200px;
 }
 ul {
     margin: 0;
@@ -67,14 +68,14 @@ li a:hover:not(.active){
     margin-right: 2em;
     margin-top: 1em;
     border-radius: 10px;
-    border: 2px solid skyblue;
+    border: 1px solid skyblue;
 }
 .top_position img{
     display: flex;
     padding: 15px;
     border-radius: 50%;
 }
-h1{
+.top_position h1{ 
     margin: 10px;
 }
 p{
@@ -103,4 +104,66 @@ h5{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: rgb(72, 17, 140);
+}
+.mini_cards{
+    display: flex;
+    margin-left: 16em;
+    margin-top: 2em;
+    justify-content: space-around;
+}
+.card{
+    background-color: rgb(234, 237, 243);
+    border: 1px solid rgb(215, 209, 209);
+    align-items: center;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+}
+.card i {
+    font-size: 2.5em;
+    padding-left: 30px;
+}
+#book i{
+    color: rgb(76, 76, 235);
+}
+#tick i{
+    color: rgb(43, 176, 43);
+}
+#poll i{
+    color: rgb(188, 85, 188);
+}
+.progress-bar{
+    width: 200px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.progress{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(188, 85, 188);
+    border-radius: 10px;
+}
+.title{
+    margin: 25px;
+    padding-left: 10px;
+}
+.title h3{
+    color: gray;
+}
+.title h1{
+    padding: 10px;
+}
+.heading-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.heading-2 h1{
+   margin-left: 9em; 
+}
+.heading-2 .btn{
+    justify-content: end;
+    padding-right: 50px;
+    color: blue;
 }
