@@ -90,7 +90,7 @@ p{
     border-radius: 10px;
     width: 300px;
     height: 120px;
-    margin-left: 12em;    
+    margin-left: 10em;    
 }
 .sidebox h6{
     color: rgb(66, 9, 118);
@@ -107,9 +107,10 @@ h5{
 }
 .mini_cards{
     display: flex;
-    margin-left: 16em;
-    margin-top: 2em;
+    margin-left: 17em;
+    margin-top: 1.5em;
     justify-content: space-around;
+    margin-right: 1.5em;
 }
 .card{
     background-color: rgb(234, 237, 243);
@@ -166,4 +167,77 @@ h5{
     justify-content: end;
     padding-right: 50px;
     color: blue;
+}
+.course_cards{
+    display: flex;
+    margin-left: 17em;
+    margin-top: 1.5em;
+    justify-content: space-around;
+    margin-right: 1.5em;
+}
+.course{
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 10px;
+    width: 350px;
+    height: 400px;
+}
+.course h1{
+    margin: 10px;
+}
+.course h3{
+    margin: 10px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.promo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.promo h3{
+   margin-left: 30px; 
+}
+.promo h5{
+    margin-top: 10px;
+    margin-right: 20px;
+    justify-content: end;
+    color: gray;
+}
+.progress-bars{
+    margin-left: 30px;
+    width: 300px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.progress-1{
+    padding-left: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 212, 75);
+    border-radius: 10px;
+}
+.progress-2{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 10px;
+}
+.progress-3{
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+.btn-1{
+    background-color: rgb(57, 57, 244);
+    color: white;
+}
+.btn-2{
+    color: blue;
+    background-color: white;
+}
+.btn-3{
+    background-color: rgb(175, 49, 214);
+    color: white;
 }
