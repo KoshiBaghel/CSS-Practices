@@ -254,3 +254,83 @@ h5{
     padding: 10px;
     border-radius: 10px;
 }
+@media (max-width: 700px){
+    .header{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .logo{
+        padding-left: 10px;
+    }
+    .right-section{
+        gap: 20px;
+        padding-right: 5px;
+    }
+    .right-item{
+        width: 150px;
+        margin: 5px;
+        padding: 8px;
+    }
+    ul{
+        list-style: none;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        overflow: auto;   
+    }
+    li a{
+        margin: 5px;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .top_position{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .top_position img{
+        width: 100px;
+        height: 100px;
+    }
+    .sidebox{
+        width: 90%;
+        margin: 10px;
+    }
+    .mini_cards{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .card{
+        width: 100%;
+        text-align: center;
+    }
+    .heading-2{
+        margin: 20px 10px;
+    }
+    .heading-2 h1{
+        margin-left: 0;
+    }
+    .heading-2 .btn{
+        padding-right: 0;
+    }
+    .course_cards{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .course{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .progress-bars{
+        width: 90%;
+    }
+}
