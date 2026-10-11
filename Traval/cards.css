@@ -16,13 +16,12 @@ p{
 }
 .places{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
 }
 .place-card{
     width: 420px;
-    height: 450px;
     border-radius: 20px;
     border: 2px transparent;
     box-shadow: 2px 3px gray;
@@ -39,11 +38,25 @@ img{
 .content{
     margin: 20px;
     text-align: left;
+    overflow-wrap: break-word;
 }
 .content h4{
     color: gray;
     margin-top: 10px;
 }
-.content p{
-    text-align: left;
+.content p {
+    line-height: 1.6;
+}
+@media screen and (max-width: 950px) {
+    .place-card{
+        width: calc(50% - 20px);
+    }
+    img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .place-card{
+        width: 100%;
+    }
 }
