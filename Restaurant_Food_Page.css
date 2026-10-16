@@ -20,6 +20,9 @@ a{
 .logo{
     padding-left: 2em;
 }
+.logo i{
+    font-size: 30px;
+}
 .logo-text{
     font-size: 2em;
 }
@@ -94,7 +97,7 @@ h6{
     border-radius: 10px;
     box-shadow: 2px 2px 8px gray;    
 }
-img{
+.cards img{
     float: left;
     width: 200px;
     height: 200px;
@@ -168,7 +171,7 @@ h1{
 .about{
     background-color: rgb(248, 236, 202);
     display: flex;
-    padding: 50px;    
+    padding: 50px;   
 }
 .about-content{
     text-align: left;
@@ -193,20 +196,48 @@ h1{
     margin-left: 10px;
 }
 .about-content p{
-    font-size: 20px;
+    font-size: 19px;
     font-family: serif;
     color: #434141;
     margin: 20px;
 }
 .about-btn{
+    display: inline-block;
     cursor: pointer;
     background-color: orange;
     color: black;
-    padding: 15px 50px;
+    padding: 10px 20px;
     border-radius: 20px;
+    margin: 5px;
+    border: 2px solid rgb(255, 98, 0);
+}
+.about-btn:hover{
+    border: 3px solid rgb(255, 51, 0);
 }
 .highlights{
     background-color: rgb(248, 221, 202);
+    display: flex;
+    justify-content: space-around;
+}
+#icon-box{
+    text-align: center;
+}
+#icon-box i{
+    font-size: 30px;
+    padding: 20px;
+}
+.leaf{
+    color: green;
+}
+.group{
+    color: rgb(255, 136, 0);
+}
+.highlight h3{
+    text-align: center;
+}
+.highlight p{
+    color: #434141;
+    text-align: center;
 }
 @media screen and (max-width:900px) {   
     .logo{
@@ -221,12 +252,12 @@ h1{
         background-position: center;
     } 
     .content-box{
-        margin: 2em 10em;   
+        margin: 5em 5em;   
     }
     .menu_order{                
         grid-template-columns: repeat(2 ,1fr); 
     }
-    img{
+    .cards img{
         height: 100%;
         width: 50%;
         margin-right: 20px;
@@ -261,10 +292,26 @@ h1{
         padding: 5px;
         margin-top: 10px;
     }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-image{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .highlights{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }
 @media screen and (max-width:600px) { 
     .logo{
         padding-left: 1em;
+    }
+    .logo i{
+        font-size: 20px;
     }
     .logo-text{
         font-size: 1em;
@@ -292,7 +339,7 @@ h1{
     .menu_order{                
         grid-template-columns: 1fr; 
     }
-    img{
+    .cards img{
         height: 200px;
         width: 50%;
         object-fit: cover;
@@ -323,6 +370,34 @@ h1{
     .Order{
         padding: 10px;
         margin-top: 10px;
+    }
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-content h5{
+        font-size: 20px;
+    }
+    .about-content h1{
+        font-size: 2em;
+        padding-left: 20px;
+    }
+    .about-content em{ 
+        font-size: 0.8em;
+    }
+    .about-content p{
+        font-size: 17px;
+    }
+    .about-image img{
+        width: 80%;
+        display: block;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .highlight h3{
+        font-size: 20px;
     }
 }  
 
