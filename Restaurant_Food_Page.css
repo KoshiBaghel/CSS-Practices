@@ -156,7 +156,7 @@ h3 {
     border: 3px solid brown;
     transform: translateY(-15px);
 }
-h1{
+.menu-title h1{
     text-align: center;
     font-size: 2em;
     margin: 40px;
@@ -169,7 +169,7 @@ h1{
     right: 0;   
 }
 .about{
-    background-color: rgb(248, 236, 202);
+    background-color: 	#faf0f0;
     display: flex;
     padding: 50px;   
 }
@@ -214,8 +214,13 @@ h1{
 .about-btn:hover{
     border: 3px solid rgb(255, 51, 0);
 }
+.about-image img{
+    border: 5px solid rgb(255, 136, 0);
+    border-radius: 20px;
+}
 .highlights{
-    background-color: rgb(248, 221, 202);
+    background-color: rgb(248, 221, 236);
+    padding: 20px;
     display: flex;
     justify-content: space-around;
 }
@@ -238,6 +243,128 @@ h1{
 .highlight p{
     color: #434141;
     text-align: center;
+}
+#contact{
+    font-family: Arial, sans-serif;
+    background-color: #f3e9f0;
+    color: #20283c;
+}
+.contact-section{
+    padding: 50px 100px;
+}
+.heading h5{
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #c66b25;
+}
+.heading h1{
+    text-align: left;
+    font-size: 42px;
+    text-decoration: none;
+}
+.heading p{
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+.contact-info{
+    flex: 1;
+}
+.info-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background-color: #c97527;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+.info-item h3{
+    margin: 1px 0 15px;
+}
+.info-item p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-form{
+    flex: 1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+.contact-form h2{
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.contact-form label{
+    display: block;
+    margin: 18px 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #c97527;
+}
+.contact-form textarea{
+    resize: vertical;
+}
+.contact-form button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #e3ac35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover{
+    background-color: #c97527;
+}
+.note{
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #777;
+}
+footer{
+    background-color: #20283c;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
 }
 @media screen and (max-width:900px) {   
     .logo{
@@ -304,6 +431,15 @@ h1{
         flex-direction: column;
         align-items: center;
         gap: 30px;
+    }
+    .contact-section{
+        padding: 50px 5%;
+    }
+    .contact-container{
+        gap: 25px;
+    }
+    .contact-form{
+        padding: 25px;
     }
 }
 @media screen and (max-width:600px) { 
@@ -398,6 +534,33 @@ h1{
     }
     .highlight h3{
         font-size: 20px;
+    }
+    .contact-section{
+        padding: 50px 30px;
+    }
+    .heading h1{
+        font-size: 34px;
+    }
+    .heading p br{
+        display: none;
+    }
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form{
+        width: 100%;
+    }
+    .contact-form{
+        padding: 22px;
+    }
+    .icon{
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    footer h3{
+        font-size: 17px;
     }
 }  
 
